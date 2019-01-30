@@ -21,3 +21,7 @@ Route::get('/help', function(){
 })->name('help');
 
 // Voeg hier je eigen routes toe
+
+Route::get('laravel-links', ['uses' => 'LinksController@index'])->name('links');
+Route::post('laravel-links', ['uses' => 'LinksController@store'])->name('post_link');
+
